@@ -1,0 +1,5 @@
+f = open("chall.jpg", "rb")
+data = f.read()
+# print(data[:10])
+print(data[-10:])
+f.close()

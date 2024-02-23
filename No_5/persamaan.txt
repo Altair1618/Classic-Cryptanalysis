@@ -1,0 +1,26 @@
+jpg dimulai ff d8 dan diakhiri ff d9
+src: https://stackoverflow.com/questions/4550296/how-to-identify-contents-of-a-byte-is-a-jpeg
+
+C = (m * P + b) mod 256
+P = (m^(-1) * (C - b)) mod 256
+
+P = 255
+C = 16
+16 = (m * 255 + b) mod 256
+255 = (m^(-1) * (16 - b)) mod 256
+
+P = 216
+C = 225
+225 = (m * 216 + b) mod 256
+216 = (m^(-1) * (225 - b)) mod 256
+
+P = 217
+C = 154
+154 = (m * 217 + b) mod 256
+217 = (m^(-1) * (154 - b)) mod 256
+
+P: 216 jadi 225
+P: 217 jadi 154
+225 + m jadi 154 di mod 256, mungkin m = 185 -> m ^ (-1) = 137
+(m * 217 + b) mod 256 = 154 -> (209 + b) mod 256 = 154 -> b = 201
+(185 * 255 + 201) mod 256 = 16, true

@@ -1,0 +1,70 @@
+Cryptology is the study of secret codes. In speaking of cryptology, we discuss two
+main branches: cryptography is concerned with the writing of messages in secret code
+and the creation of these methods, while cryptanalysis is concerned with reading
+encrypted messages by breaking secret codes.
+Ancient times saw many examples of cryptography. Over three thousand years
+ago, Egyptian scribes made use of hieroglyphic transformations to obscure the meaning of written messages. Mesopotamian and Babylonian scribes employed similar
+techniques to render cuneiform tablets unreadable to the uninitiated. The Greeks
+employed cryptography (and the closely related steganography, which is concerned
+with concealing the existence of communication rather than content) for military and
+tactical purposes. Even the K¯ama-s¯utra of ancient India touches on cryptography,
+listing secret writing as one of the sixty-four fundamental arts. Hundreds of other
+examples occur in ancient civilizations; in short, cryptography has appeared more or
+less spontaneously in every culture in which literacy has become widespread [45].
+Cryptanalysis, on the other hand, took considerably longer to develop as a rigorous
+subject of study. The earliest surviving descriptions of systematic methods of codebreaking come from fifteenth century, in the Arabic encyclopedia S. ubh. al-a ‘sha [45].
+It gives the first known written description of the technique of frequency analysis,
+where the frequencies of letters and letter groupings of a language are used to unravel
+secret codes.
+Cryptology has played a role in political and military matters from medieval times
+through the 20th century. Perhaps most famous is the cryptologic effort of Great
+Britain and the United States during World War II. The efforts of thirty thousand
+employees at Britain’s Bletchley Park in cryptanalyzing Germany’s Enigma transmissions is said to have shortened the war by several years [45], and it led to the
+development of the first digital computer, Colossus. Similar efforts in the United
+States to break Japanese codes aided American intelligence in the war, convincing
+American authorities of the importance of cryptologic expertise and eventually leading to the establishment of the National Security Agency in 1952.
+With the rise of digital computer networks in the 1970s, securing communication
+became an increasingly important task in the private sector as well. The needs of the
+banking industry, in particular, for secure digital communication became especially
+urgent. Developments at IBM led to the design of Lucifer, one of the first public
+ciphers for computer communications. The National Security Agency offered several
+improvements to Lucifer, and in 1975 the National Bureau of Standards presented the
+modified version as the Data Encryption Standard, or D.E.S. Thus the first public
+standard for encryption began to gain widespread use.
+A method of securing communication is called a cryptosystem. The sender encrypts (or enciphers) a message using an encryption algorithm together with a secret
+key. This produces a ciphertext which is sent to the recipient. The recipient, who
+also possesses a key, receives the ciphertext and decrypts (or deciphers) using the key
+to recover the original message, called the plaintext.
+In the history of cryptology up to 1975, all cryptosystems required the sender and
+the receiver to agree beforehand on the same key, a key that had to be rigorously
+protected from exposure to an adversary. This is known as symmetric or secret key
+cryptography. Arranging to share a secret key between two parties is often a difficult
+problem, and does not scale well to scenarios in which many individuals or computers
+might communicate with each other.
+In 1976, Martin Hellman, a professor at Stanford University, and Whitfield Diffie, a
+graduate student, introduced the concept of asymmetric or public key cryptography in
+their seminal paper New Directions in Cryptography. They speculated that a method of encryption might exist in where the encryption key differed from the decryption
+key. In such a scheme, a user’s encryption key could be announced to the public;
+any outsider could obtain this public encryption key and use it to send encrypted
+messages to the user. Since only the user would posses the decryption key, only she
+could obtain the decryption of the message. Public key cryptography also opened
+doors for many other applications, such as digital signatures and electronic cash.
+The concept of public key cryptography circulated in the research community for
+some time before the first practical proposal for such a scheme was made.1
+In August 1977 the RSA public key cryptosystem, named after inventors Ron Rivest, Adi
+Shamir, and Len Adleman, was introduced in Martin Gardner’s column on Mathematical Games in Scientific American [32]. The RSA cryptosystem, outlined in
+Section 3.1, has survived over twenty years of study by cryptanalysts in the public
+sector, and it is the most widely used public key cryptosystem in the world. It is
+used, among other places, in the SET protocol [84] for secure credit card transactions
+and the SSL protocol [30] for secure communication on the Internet.
+Public discussion and research in cryptography in business and academia started
+in the last quarter of the 20th century, and continues at a furious rate. New methods
+for encryption are publicly announced; researchers then study these methods for
+weaknesses by applying the tools of cryptanalysis.2 Only after intense public scrutiny
+does a new cryptosystem gain a sense of legitimacy. Studying and using methods
+for breaking cryptosystems is an essential step in the development of new designs for
+more secure cryptosystems. By learning how things break, we learn how to make
+them stronger.
+It is in this spirit that this thesis is written. This work uses mathematical tools
+to study the RSA public key cryptosystem and several variants. We use tools from numerical algebra and the geometry of numbers to get our results. Algebraic cryptanalysis has proven to be one of the most effective methods in the study of public
+key cryptosystems.
