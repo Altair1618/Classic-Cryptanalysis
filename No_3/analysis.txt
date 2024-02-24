@@ -1,0 +1,27 @@
+Ciphertext -> Plain
+HE -> TH
+EL -> HE
+HM -> ER
+TH -> AT
+TM -> EV
+QX -> IN
+ET -> HA
+LA -> EL
+AT -> LA
+GS -> IG
+HY -> WH
+MV -> _S
+QN -> _M
+
+1. HE dan EL mungkin TH dan HE, karena HE jadi HE tidak mungkin maka HE -> TH dan EL -> HE
+2. Berdasarkan frek quadrigram, THAT dan THER sering muncul dan ada HETH dan HEHM. HEHM
+lebih mungkin menjadi THER karena HM dan MH sering muncul bersesuaian dengan ER dan RE, maka
+HM -> ER dan TH -> AT
+3. Karena TMHM lumayan banyak dan hanya ada ever yang tersisa maka TM -> EV
+4. Karena HEQX banyak muncul serta QX juga yang berarti kemungkinan adalah QX -> IN
+5. Karena ETMT banyak dan sementara berarti ETve maka kemungkinan ET -> HA
+6. Setelah melihat semua kombinasi pasti terdapat A T H E L maka LA -> EL dan AT -> LA
+7. Karena ada GSEH yang sekarang berarti GSht kemungkinan adalah ight maka GS -> IG
+8. Terdapat HYatever, umumnya ini berarti whatever, maka HY -> WH
+9. Terdapat MVeveral yang mungkin berarti several, maka sementara MV -> _S
+10. Terdapat QNighthave yang mungkin berarti might have, maka sementara QN -> _M
