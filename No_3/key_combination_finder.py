@@ -10,6 +10,8 @@ guesses = {
     "AT": "LA",
     "GS": "IG",
     "HY": "WH",
+    "MV": "RS",
+    "KH": "YW",
 }
 
 encrypt_list = {}

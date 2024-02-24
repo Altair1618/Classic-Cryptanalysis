@@ -10,8 +10,13 @@ LA -> EL
 AT -> LA
 GS -> IG
 HY -> WH
-MV -> _S
+MV -> RS
 QN -> _M
+KH -> YW
+YK -> HY
+KR -> YK
+RW -> KR
+WH -> RW
 
 1. HE dan EL mungkin TH dan HE, karena HE jadi HE tidak mungkin maka HE -> TH dan EL -> HE
 2. Berdasarkan frek quadrigram, THAT dan THER sering muncul dan ada HETH dan HEHM. HEHM
@@ -25,3 +30,127 @@ HM -> ER dan TH -> AT
 8. Terdapat HYatever, umumnya ini berarti whatever, maka HY -> WH
 9. Terdapat MVeveral yang mungkin berarti several, maka sementara MV -> _S
 10. Terdapat QNighthave yang mungkin berarti might have, maka sementara QN -> _M
+11. Terdapat thatS_ight dimana S berasal dari VM -> S_ dan sepertinya memenuhi thatsright,
+maka VM -> SR atau MV -> RS
+12. Terdapat everKHhere yang mungkin adalah everywhere, maka KH -> YW
+13. Ditemukan HYKRW pasti 1 row, maka YK -> HY, KR -> YK, RW -> KR, WH -> RW
+
+Kunci mungkin sementara (yang pasti dan asumsi diawali ATHEL):
+ATHEL
+..Y..
+..K..
+SVRM.
+..W..
+
+Substitusi Baru (Di atas ga lanjut, terlalu acak WKWKWKWK):
+AT LA
+AH LT
+AE LH
+AL LE
+TH AT
+TE AH
+TL AE
+HE TH
+HL TE
+EL HE
+HY WH
+HK WY
+HR WK
+HW WR
+YK HY
+YR HK
+YW HR
+KR YK
+KW YR
+RW KR
+SV PS
+SR PV
+SM PR
+SP PM
+VR SV
+VM SR
+VP SM
+RM VR
+RP VM
+MP RM
+AV TS
+TS AV
+AR HS
+HS AR
+AM ES
+ES AM
+AP LS
+LS AP
+TR HV
+HV TR
+TM EV
+EV TM
+TP LV
+LV TP
+HM ER
+ER HM
+HP LR
+LR HP
+EP LM
+LM EP
+QX IN
+GS IG
+QN _M
+HN _W
+VK RC
+RC VK
+TK HC
+HC TK
+VG _C
+
+Kunci yang diganti:
+ATHEL
+..Y..
+.CK..
+SVRMP
+..WN.
+
+1. Terdapat HNhatever yang mungkin berarti whatever, maka HN _W
+2. Terdapat VKigarette dimana kemungkinan yang mungkin hanya cigarette maka VK _C.
+Lalu, berdasarkan kunci sementara VK adalah R_, maka VK adalah RC. Sekaligus tambahan TK HC
+3. Terdapat streetlaPS yang kemungkinan besar streetlamp maka PS MP. Dalam key saat ini hanya
+ada 1 kemungkinan P ditaruh yaitu di sebelah kanan M maka melengkapi baris jadi SVRMP
+4. Terdapat VGarpark yang kemungkinan besar adalah carpark, maka VG _C
+5. Terdapat th_Walls yang mungkin the walls dimana W berasal dari HN _W. Maka HN EW yang berarti N
+di titik temu E dan W.
+
+--------------------------------
+Mulai pake generate_from_key.py
+--------------------------------
+
+Key yang diubah
+ATHEL
+.ZYQU
+.CKDO
+SVRMP
+X.WNF
+
+1. Terdapat telephDFTD yang kemungkinan besar adalah telephone maka DF ON dan TD E_
+2. Terdapat IHnother yang kemungkinan besar adalah another maka IH _A
+3. Terdapat QEearest yang kemungkinan besar adalah nearest maka QE _N. Satu satunya tempat yang mungkin adalah
+Q di bawah E maka QE EN
+4. Terdapat theywerethelastpePFle yang kemungkinan besar adalah they were the last people. Maka PF OP.
+Hal ini berarti PFO satu kolom yang sama (baris sudah penuh) maka O di atas P dan F di bawah P
+5. Terdapat perfTDtly yang kemungkinan besar adalah perfectly maka TD EC. Berarti D di titik temu
+E dan C
+6. Terdapat banyak kata potter jadi curiga ini Harry Potter
+7. Terdapat normaUP, seharusnya ini normal maka UP L_ karena L dan P sebaris maka kemungkinan U juga dan hanya sisa 1 titik
+dan setelah dimasukkan UP adalah LO
+8. Terdapat thankyoZPerymZOh yang kemungkinan besar adalah thank you very much. Maka ZP UV dan ZO UC
+9. Terdapa e_pect dan e_ berasal dari AN. Kemungkinan besar adalah expect maka AN EX
+10. Kalimat pertama sudah hampir lengkap dan dapat dibruteforce didapat teks berikut
+https://media.bloomsbury.com/rep/files/harry-potter-and-the-philosophers-stone.pdf
+
+Key Lengkap:
+ATHEL
+IZYQU
+GCKDO
+SVRMP
+XBWNF
+
+Setelah membandingkan hasil decipher dan teks dari website, akhirnya tepat sesuai dengan website tersebut
