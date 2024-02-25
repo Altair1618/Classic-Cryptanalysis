@@ -1,9 +1,5 @@
 import os
-
-def dump_file(dictionary, filename):
-  with open(os.path.join(os.path.dirname(__file__), filename), "w") as convert_file: 
-    for key in dictionary:
-      convert_file.write(f"{key}: {dictionary[key]}\n")
+from utils import dump_file
 
 
 def search_ngram(text, n):
@@ -30,8 +26,7 @@ def main ():
 
     # Sanitize
     content.replace("\n", "")
-    # Iterate 2-6
-    for i in range (2,7):
+    for i in range (3,7):
       search_ngram(content, i)
 
 

@@ -1,20 +1,4 @@
-import os
-
-def dump_file(dictionary, filename):
-  with open(os.path.join(os.path.dirname(__file__), filename), "w") as convert_file: 
-    for key in dictionary:
-      convert_file.write(f"{key}: {dictionary[key]}\n")
-
-
-def read_file(filename):
-  lib = dict()
-  with open(os.path.join(os.path.dirname(__file__), filename), "r") as file:
-    for line in file :
-      temp_list = line.split(":")
-      val = temp_list[1].replace(" ", "").replace("[","").replace("]","").replace("\n", "").split(",")  
-      key = temp_list[0]
-      lib[key] = val
-  return lib
+from utils import dump_file, read_file
   
 
 def search_repeated_substr(lib: dict):
@@ -32,7 +16,7 @@ def search_repeated_substr(lib: dict):
   return new_lib
 
 def main():
-  for i in range (2,7):
+  for i in range (3,7):
     input_file = "dict/dictionary-"+str(i)+"-gram.txt"
     lib = read_file(input_file)
 
