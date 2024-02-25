@@ -68,11 +68,11 @@ def main():
     group_list.append(substr)
 
   # For each group, do caesar cipher
-  # print("Most frequent char on each group")
-  # for group in group_list:
-  #   print(group)
-  #   monogram = search_ngram(group, 1)
-  #   print(monogram[:3])
+  print("Most frequent char on each group")
+  for i in range(len(group_list)):
+    # print(group)
+    monogram = search_ngram(group_list[i], 1)
+    print(i+1, monogram[:3])
   
   char_key = 'ETA'
   char_list = ['GPV', 'LPA', 'IRX', 'SHB', 'RGA', 'OXD', 'MBV', 'QAU', 'LWF', 'SBH', 'RGN', 'ZKU']
@@ -80,7 +80,7 @@ def main():
   # Potential key
   res = ''
   for str in char_list:
-    potential_char = (ord(str[0]) - BASE_ORD) - (ord(char_key[0]) - BASE_ORD)
+    potential_char = ((ord(str[0]) - BASE_ORD) - (ord(char_key[0]) - BASE_ORD)) % 26
     new_char = chr(potential_char + BASE_ORD)
     res += new_char
   print(res)
